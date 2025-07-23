@@ -1,0 +1,57 @@
+{
+  "name": "damianulan/laraverse",
+  "type": "library",
+  "description": "Laraverse Laravel skeleton application package",
+  "keywords": [
+    "laravel",
+    "documentation",
+    "markdown",
+    "module"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Damian Ułan",
+      "email": "damian.ulan@protonmail.com",
+      "homepage": "https://damianulan.me",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.3",
+    "ext-json": "*",
+    "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+    "mews/purifier": "^3.4",
+    "spatie/laravel-markdown": "*"
+  },
+  "require-dev": {
+    "mockery/mockery": "^1.5",
+    "phpunit/phpunit": "^11.0|^12.0"
+  },
+  "suggest": {
+    "laravel/framework": "^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Laraverse\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Laraverse\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Laraverse\\LaraverseServiceProvider"
+      ],
+      "aliases": {
+        "Laraverse": "Laraverse\\Facades\\Laraverse"
+      }
+    }
+  }
+}
