@@ -9,4 +9,7 @@ return [
     |
     | These are package's default configuration options.
     |
-    */];
+    */
+    'source_dir' => 'docs',
+
+];
