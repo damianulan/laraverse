@@ -23,14 +23,14 @@
     "resolve-url-loader": "^5.0.0",
     "rtlcss": "^4.0.0",
     "sass": "^1.56.1",
-    "sass-loader": "^13.2.0"
+    "sass-loader": "^13.2.0",
+    "jquery": "^3.6.3"
   },
   "devDependencies": {
     "@fontsource/ibm-plex-sans": "^5.1.0",
     "@fontsource/ibm-plex-serif": "^5.1.0",
     "@fontsource/jetbrains-mono": "^5.1.1",
     "bootstrap-icons": "^1.13.1",
-    "jquery": "^3.6.3",
     "string-replace-loader": "^3.1.0"
   },
   "name": "laraverse",

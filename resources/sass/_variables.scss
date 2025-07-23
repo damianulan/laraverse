@@ -6,3 +6,13 @@ $font-family-monospace: "JetBrains Mono", monospace;
 $font-family-icons: "bootstrap-icons";
 $font-size-base: 0.8rem;
 $line-height-base: 1.5;
+
+$primary: #7a7a7a;
+$secondary: #efefef;
+$body-bg: #fff;
+$body-wrapper-bg: #fff;
+
+$sidebar-bg: $secondary;
+$link-color: $primary;
+$link-color-hover: darken($primary, 25%);
+$disabled-text: #e2e2e2;

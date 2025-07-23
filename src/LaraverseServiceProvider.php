@@ -27,6 +27,7 @@ class LaraverseServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'laraverse');
 
         $this->loadTranslationsFrom(__DIR__ . '/../lang', 'laraverse');
 
@@ -35,11 +36,16 @@ class LaraverseServiceProvider extends ServiceProvider
         ], 'laraverse-langs');
 
         $this->publishes([
-            __DIR__ . '/../config/laraverse.php'      => config_path('laraverse.php'),
+            __DIR__ . '/../config/laraverse.php'   => config_path('laraverse.php'),
         ], 'laraverse-config');
 
         $this->publishes([
-            __DIR__ . '/../config/laraverse.php'      => config_path('laraverse.php'),
+            __DIR__ . '/../resources/views'        => resource_path('views/vendor/laraverse'),
+        ], 'laraverse-views');
+
+
+        $this->publishes([
+            __DIR__ . '/../config/laraverse.php'   => config_path('laraverse.php'),
         ], 'laraverse');
 
         $this->registerBladeDirectives();

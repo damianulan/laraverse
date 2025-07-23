@@ -1,0 +1,56 @@
+html,
+body {
+  direction: ltr;
+  height: 100%;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(179, 177, 177);
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgb(136, 136, 136);
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: rgb(100, 100, 100);
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:active {
+  background: $primary;
+  border-radius: 10px;
+}
+
+#app {
+  height: 100%;
+  word-wrap: break-word;
+}
+
+body {
+  background-color: $body-wrapper-bg;
+}
+
+.content {
+  padding: 0;
+  position: relative;
+  transition: 300ms ease all;
+  backface-visibility: hidden;
+  min-height: calc(100% - 4rem);
+  transition: all 0.4s ease 0s;
+  padding-bottom: 1.5rem;
+}
+
+.page-wrapper {
+  padding: 0 1.5rem;
+}
+
+section.content-wrapper {
+  word-wrap: break-word;
+}
