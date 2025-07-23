@@ -2,8 +2,7 @@
     <div class="navbar-brand mb-0 px-6">
         <div class="d-flex">
             <a class="brand" href="{{ url('/') }}">
-                <div class="brand-icon"><i class="bi-layers-half"></i></div>
-                <div class="brand-title">Open<span class="brand-title-2">MBO</span></div>
+                <div class="brand-title">{{ config('app.name') }}</div>
             </a>
         </div>
     </div>
@@ -14,7 +13,7 @@
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <a href="{{ url('/') }}" class="nav-link dropdown-toggle" role="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                 <span class="nav-title">Link</span>
             </a>
             <ul class="collapse" id="collapseExample">

@@ -7,12 +7,12 @@ $font-family-icons: "bootstrap-icons";
 $font-size-base: 0.8rem;
 $line-height-base: 1.5;
 
-$primary: #7a7a7a;
+$primary: #444;
 $secondary: #efefef;
 $body-bg: #fff;
 $body-wrapper-bg: #fff;
 
 $sidebar-bg: $secondary;
 $link-color: $primary;
-$link-color-hover: darken($primary, 25%);
+$link-color-hover: lighten($primary, 25%);
 $disabled-text: #e2e2e2;
