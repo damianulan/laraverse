@@ -1,7 +1,7 @@
 // webpack.mix.js
 
 let mix = require("laravel-mix");
-require("laravel-mix-string-replace");
+//require("laravel-mix-string-replace");
 require("dotenv").config();
 
 // const locale = process.env.APP_LOCALE;
@@ -25,12 +25,9 @@ const scssOptions = {
 };
 
 // misc
-
-// base-theme
-mix.js("resources/js/app.js", "public/build/js").version();
-
+mix.js("resources/js/app.js", "dist/app.js").setPublicPath("dist").version();
 mix
-  .sass("resources/sass/app.scss", "public/build/app.min.css", {
+  .sass("resources/sass/app.scss", "dist/app.min.css", {
     sassOptions: scssOptions,
   })
   .version();

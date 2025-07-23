@@ -32,5 +32,20 @@
     "bootstrap-icons": "^1.13.1",
     "jquery": "^3.6.3",
     "string-replace-loader": "^3.1.0"
-  }
+  },
+  "name": "laraverse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.mix.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damianulan/laraverse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damianulan/laraverse/issues"
+  },
+  "homepage": "https://github.com/damianulan/laraverse#readme"
 }

@@ -39,7 +39,6 @@ class LaraverseServiceProvider extends ServiceProvider
         ], 'laraverse-config');
 
         $this->publishes([
-            __DIR__ . '/../stubs'                  => base_path('stubs'),
             __DIR__ . '/../config/laraverse.php'      => config_path('laraverse.php'),
         ], 'laraverse');
 
