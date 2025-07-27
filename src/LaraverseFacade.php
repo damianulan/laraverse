@@ -4,7 +4,7 @@ namespace Laraverse;
 
 use Illuminate\Support\Facades\Facade as BaseFacade;
 
-class Facade extends BaseFacade
+class LaraverseFacade extends BaseFacade
 {
     /**
      * Get the registered name of the component.

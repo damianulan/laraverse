@@ -15,7 +15,7 @@ html .sidebar-menu {
   transition: all 0.4s ease 0s;
   right: auto;
   left: 0;
-  width: 300px;
+  width: $sidebar-width;
 }
 
 .sidebar-menu .sidebar-footer {

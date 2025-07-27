@@ -40,17 +40,32 @@ body {
 .content {
   padding: 0;
   position: relative;
-  transition: 300ms ease all;
   backface-visibility: hidden;
   min-height: calc(100% - 4rem);
   transition: all 0.4s ease 0s;
   padding-bottom: 1.5rem;
+  margin-left: $sidebar-width;
 }
 
 .page-wrapper {
-  padding: 0 1.5rem;
+  padding: 2rem 6rem;
 }
 
 section.content-wrapper {
   word-wrap: break-word;
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+  font-weight: 800;
 }

@@ -22,7 +22,8 @@
     "ext-json": "*",
     "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
     "mews/purifier": "^3.4",
-    "spatie/laravel-markdown": "*"
+    "spatie/laravel-markdown": "*",
+    "spatie/shiki-php": "^2.3"
   },
   "require-dev": {
     "mockery/mockery": "^1.5",

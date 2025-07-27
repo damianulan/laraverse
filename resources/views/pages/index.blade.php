@@ -1,6 +1,5 @@
 @extends('laraverse::layouts.master')
 @section('content')
-<div class="container">
+<x-markdown>{!! $page->getContents() !!}</x-markdown>
 
-</div>
 @endsection

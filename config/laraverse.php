@@ -10,6 +10,10 @@ return [
     | These are package's default configuration options.
     |
     */
-    'source_dir' => 'docs',
+    'sources' => [
+        // slug => path
+        'docs' => 'docs',
+        'formforge' => 'vendor/damianulan/laravel-form-forge/docs',
+    ],
 
 ];

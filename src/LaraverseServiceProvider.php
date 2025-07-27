@@ -5,6 +5,7 @@ namespace Laraverse;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\View\Compilers\BladeCompiler;
 use Illuminate\Support\Facades\Blade;
+use Laraverse\Config\Laraverse;
 
 /**
  * @author Damian Ułan <damian.ulan@protonmail.com>
@@ -20,6 +21,11 @@ class LaraverseServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->mergeConfigFrom(__DIR__ . '/../config/laraverse.php', 'laraverse');
+        $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
+
+        $this->app->bind('laraverse', function () {
+            return new Laraverse();
+        });
     }
 
     /**
