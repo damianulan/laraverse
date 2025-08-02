@@ -32,7 +32,7 @@ class VersePage
         }
         $this->contents = File::get($file->getPathname());
         $this->html = app(\Spatie\LaravelMarkdown\MarkdownRenderer::class)
-            ->highlightTheme('github-dark')
+            ->highlightTheme('github-light')
             ->toHtml($this->contents);
     }
 
